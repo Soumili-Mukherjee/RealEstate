@@ -1,0 +1,82 @@
+.c-container {
+    position: relative; 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.c-left {
+    flex: 1;
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.c-right {
+    position: absolute; 
+    right: 100px; 
+    top:0px; 
+    width: 30%; 
+    display: flex;
+    justify-content: flex-end;
+}
+
+.right-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-left: 1rem;
+}
+
+.contactModes {
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.contactModes .row {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.mode {
+    width: 16rem;
+    padding: 1rem;
+    border: 0.8px solid rgba(128, 128, 128, 0.143);
+    border-radius: 5px;
+    gap: 1rem;
+    transition: transform 300ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mode .button {
+    width: 100%;
+    background: var(--lightBlue);
+    color: var(--blue);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.mode > :nth-child(1) {
+    width: 100%;
+    gap: 1.6rem;
+}
+
+.mode .detail.primaryText {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.mode:hover {
+    scale: 1.1;
+    box-shadow: var(--shadow);
+}
+
+.mode .button:hover {
+    background: var(--blue-gradient);
+    color: white;
+    scale: 0.8;
+}

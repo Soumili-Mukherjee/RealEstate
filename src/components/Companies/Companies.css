@@ -1,0 +1,11 @@
+.c-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    padding-left: 20rem;  /* Large gap on the left */
+    padding-right: 20rem; /* Large gap on the right */
+}
+
+.c-container > img {
+    width: 9rem;
+}
